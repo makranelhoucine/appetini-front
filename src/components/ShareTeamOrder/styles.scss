@@ -13,3 +13,18 @@
     min-width: 140px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .shareWrapper {
+    display: block;
+    .shareInput {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+
+    .shareButton {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

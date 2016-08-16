@@ -186,6 +186,7 @@ export default class TeamOrderShow extends Component {
               </Link>
             </div>
           : <TeamOfferContainer offer={teamOrder.team_offer} disabled={disabled}
+                                owner={!disabled}
                                 totalPrice={teamOrder.price}
                                 user={user}
                                 shareLink={teamOrder.share_link}

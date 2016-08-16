@@ -111,6 +111,7 @@ export default class TeamOfferShow extends Component {
                           onShare={::this.shareTeamOrder}
                           totalPrice={totalPrice}
                           user={user}
+                          owner={true}
                           orderedAmount={teamOrderAmount}
                           disabled={disabled}
                           onBuy={::this.onBuyHandle}>
