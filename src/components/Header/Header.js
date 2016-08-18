@@ -85,9 +85,12 @@ export default class Header extends Component {
           {(lunchesAmount > 0 || order) && <ShoppingButton countItems={lunchesAmount} className={styles.shopCartMob}/>}
         </div>
         <IndexLink className={styles.brand} to="/">
-          <div className={styles.brandIcon}></div>
+          <div className={styles.brandIcon}>
+            <span className={styles.brandIconCity}>сумы</span>
+            <span className={styles.brandIconPhone}>+38 068 366 11 24</span>
+          </div>
           <span className={styles.brandLabel}>
-            <span className={styles.brandLabelCity}>Сумы</span>
+            <span className={styles.brandLabelPhone}>+38 068 366 11 24</span>
           </span>
         </IndexLink>
 

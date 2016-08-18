@@ -34,14 +34,37 @@
   position: relative;
 }
 
-.brandLabelCity {
+.brandLabelPhone {
   font-size: 10px;
-  text-transform: uppercase;
   color: $color-primary;
   position: absolute;
-  bottom: -2px;
+  padding: 3px 0;
+  bottom: -10px;
   right: -1px;
+  letter-spacing: 2.45px;
+  font-weight: 500;
+  background: linear-gradient(to bottom, transparent, white, white, white);
+}
+
+.brandIconPhone {
+  font-size: 10px;
+  color: $color-primary;
+  position: relative;
+  top: 39px;
+  right: 32px;
   letter-spacing: 2px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.brandIconCity {
+  font-size: 12px;
+  text-transform: lowercase;
+  color: #c29872;
+  position: relative;
+  bottom: -37px;
+  right: -5px;
+  letter-spacing: 4px;
   font-weight: 500;
 }
 
@@ -115,7 +138,7 @@
   display: inline-block;
   margin: 0 0 0 1.5rem;
 }
-@media (min-width: 760px) {
+@media (min-width: 1091px) {
   .root .desktopMenu {
     display: initial;
   }
@@ -123,6 +146,9 @@
     display: none;
   }
   .root .mobMenu {
+    display: none;
+  }
+  .brandIconPhone {
     display: none;
   }
   .root .shopCartMob {
@@ -136,17 +162,23 @@
   }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 1090px) {
   .brand {
     margin-right: 0;
   }
-}
-
-@media (max-width: 925px) {
   .brandLabel {
+    display: none;
+  }
+  .brandIconCity {
     display: none;
   }
   .brandIcon {
     margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .logout {
+    margin-right: 1.5rem;
   }
 }
